@@ -1,0 +1,217 @@
+{
+  "version": "1.0",
+  "updated": "2026-09-05",
+  "platforms": {
+    "linkedin": {
+      "algorithm_name": "LinkedIn Feed Ranking 2026",
+      "primary_signals": {
+        "dwell_time": { "weight": 0.25, "description": "Time spent reading. Longer = better. Target: 8+ min for articles, 2+ min for posts" },
+        "comment_quality": { "weight": 0.20, "description": "Comments > likes. Replies to comments count double. Target: 5+ meaningful comments" },
+        "creator_audience_fit": { "weight": 0.15, "description": "Does the viewer follow similar content? Personal > company page" },
+        "recency": { "weight": 0.15, "description": "First 60 minutes critical. Posts decay after 24 hours" },
+        "content_type_boost": { "weight": 0.15, "description": "Document (PDF) > Video > Image > Text > Link" },
+        "profile_completeness": { "weight": 0.10, "description": "Complete profile + active poster gets distribution boost" }
+      },
+      "optimal_formats": {
+        "document_carousel": { "engagement_multiplier": 2.5, "notes": "PDF carousels get 2.5x reach. Native to platform, high dwell time" },
+        "video_under_90s": { "engagement_multiplier": 1.8, "notes": "Short native video. No external links. Subtitles required" },
+        "text_only_personal": { "engagement_multiplier": 1.5, "notes": "Personal stories outperform company updates 3:1" },
+        "poll": { "engagement_multiplier": 1.4, "notes": "Polls get 2x comments but lower quality" },
+        "link_post": { "engagement_multiplier": 0.3, "notes": "External links get suppressed. Put link in comments" }
+      },
+      "posting_windows": {
+        "tuesday_thursday": { "peak": "08:00-09:00", "secondary": "12:00-13:00", "notes": "Highest professional engagement" },
+        "monday": { "peak": "09:00-10:00", "notes": "Planning day, high engagement" },
+        "wednesday": { "peak": "12:00-13:00", "notes": "Mid-week check" },
+        "friday": { "peak": "09:00-10:00", "notes": "Lower competition, decent engagement" },
+        "weekend": { "notes": "Low professional engagement. Avoid unless lifestyle content" }
+      },
+      "content_decay": {
+        "first_hour": { "distribution": "100%", "action": "Push to all followers" },
+        "hour_2_6": { "distribution": "60%", "action": "Test engagement quality" },
+        "hour_6_24": { "distribution": "30%", "action": "Only if high engagement" },
+        "after_24h": { "distribution": "5%", "action": "Dead. Don't boost." }
+      },
+      "virality_triggers": {
+        "contrarian_opinion": { "multiplier": 2.0, "notes": "Unpopular takes get 2x comments" },
+        "personal_story": { "multiplier": 1.8, "notes": "Vulnerability + lesson = saves + shares" },
+        "data_insight": { "multiplier": 1.6, "notes": "Original data gets bookmarked and shared" },
+        "question_hook": { "multiplier": 1.5, "notes": "Posts ending in questions get 50% more comments" }
+      },
+      "penalties": {
+        "external_link_in_post": { "reach_reduction": 0.7, "notes": "LinkedIn suppresses link posts" },
+        "tagging_people": { "reach_reduction": 0.8, "notes": "Tagging without consent = spam signal" },
+        "posting_too_often": { "reach_reduction": 0.5, "notes": "More than 1/day = diminishing returns" },
+        "low_engagement_first_hour": { "reach_reduction": 0.3, "notes": "If no engagement in hour 1, post is dead" }
+      }
+    },
+    "instagram": {
+      "algorithm_name": "Instagram Feed + Reels Ranking 2026",
+      "primary_signals": {
+        "watch_time": { "weight": 0.30, "description": "For Reels: % of video watched. Target: 80%+ completion" },
+        "engagement_rate": { "weight": 0.25, "description": "Likes + comments + saves + shares per impression" },
+        "relationship": { "weight": 0.20, "description": "DMs, comments, profile visits between creator and viewer" },
+        "recency": { "weight": 0.15, "description": "Newer posts rank higher. Decay after 48 hours" },
+        "content_type": { "weight": 0.10, "description": "Reels > Carousel > Static > Link" }
+      },
+      "optimal_formats": {
+        "reels_7_15s": { "engagement_multiplier": 3.0, "notes": "Short Reels get 3x reach. Hook in first 1 second" },
+        "reels_30_60s": { "engagement_multiplier": 2.0, "notes": "Medium Reels for storytelling. Must retain attention" },
+        "carousel_5_10_slides": { "engagement_multiplier": 2.5, "notes": "Carousels get 2x saves. Last slide = CTA" },
+        "static_image": { "engagement_multiplier": 1.0, "notes": "Baseline. Needs strong visual" },
+        "stories": { "engagement_multiplier": 0.8, "notes": "For engagement, not reach. Use polls, questions" }
+      },
+      "reels_specific": {
+        "hook_first_second": { "importance": "critical", "notes": "If they scroll in first 1 second, Reel dies" },
+        "trending_audio": { "boost": 1.5, "notes": "Using trending audio = 50% reach boost" },
+        "text_overlay": { "boost": 1.3, "notes": "Captions = 30% more completion" },
+        "loop_optimization": { "boost": 1.4, "notes": "Seamless loops = more replays = algorithm love" },
+        "hashtags_3_5": { "boost": 1.1, "notes": "3-5 relevant hashtags. More = spam signal" },
+        "posting_time_reels": { "peak": "07:00-08:00", "secondary": "12:00-13:00", "tertiary": "19:00-21:00" }
+      },
+      "posting_windows": {
+        "monday_friday": { "peak": "07:00-08:00", "secondary": "12:00-13:00", "tertiary": "19:00-21:00" },
+        "weekend": { "peak": "09:00-11:00", "notes": "Weekend mornings good for lifestyle content" }
+      },
+      "content_decay": {
+        "reels_first_24h": { "distribution": "100%", "notes": "Reels get push for 24-48 hours" },
+        "reels_day_2_7": { "distribution": "40%", "notes": "If performing well, continues to get push" },
+        "carousel_first_48h": { "distribution": "100%", "notes": "Carousels have longer shelf life" },
+        "static_first_24h": { "distribution": "100%", "notes": "Static posts decay fastest" }
+      },
+      "virality_triggers": {
+        "trending_audio_recreation": { "multiplier": 2.5, "notes": "Recreate trending format with your niche" },
+        "relatable_moment": { "multiplier": 2.0, "notes": "If people tag friends, algorithm pushes" },
+        "before_after": { "multiplier": 1.8, "notes": "Transformations get saves + shares" },
+        "quick_tip": { "multiplier": 1.6, "notes": "Saveable content = algorithm boost" }
+      },
+      "penalties": {
+        "watermark_from_other_app": { "reach_reduction": 0.5, "notes": "TikTok watermark = half reach" },
+        "low_quality_video": { "reach_reduction": 0.6, "notes": "Blurry, poor lighting = suppressed" },
+        "hashtag_stuffing": { "reach_reduction": 0.7, "notes": "10+ hashtags = spam signal" },
+        "reposted_content": { "reach_reduction": 0.4, "notes": "Content already on IG gets suppressed" }
+      }
+    },
+    "tiktok": {
+      "algorithm_name": "TikTok For You Page 2026",
+      "primary_signals": {
+        "watch_time": { "weight": 0.35, "description": "Most important. 100% completion = massive push" },
+        "replay_rate": { "weight": 0.20, "description": "If they watch twice, algorithm pushes hard" },
+        "engagement": { "weight": 0.20, "description": "Likes, comments, shares relative to views" },
+        "sound_usage": { "weight": 0.15, "description": "Using trending sound = initial push" },
+        "content_quality": { "weight": 0.10, "description": "Resolution, lighting, audio quality" }
+      },
+      "optimal_formats": {
+        "video_15_30s": { "engagement_multiplier": 3.0, "notes": "Sweet spot for completion rate" },
+        "video_30_60s": { "engagement_multiplier": 2.0, "notes": "If hook is strong enough" },
+        "video_60_120s": { "engagement_multiplier": 1.5, "notes": "Only for storytelling. High drop-off risk" },
+        "duet_stitch": { "engagement_multiplier": 2.5, "notes": "Algorithm loves native features" },
+        "photo_carousel": { "engagement_multiplier": 0.5, "notes": "Not native to TikTok. Low reach" }
+      },
+      "fyp_mechanics": {
+        "initial_pool": { "views": "200-500", "notes": "First push to small group" },
+        "engagement_threshold": { "rate": "50%", "notes": "If 50% watch full video, push to 2,000-10,000" },
+        "second_threshold": { "rate": "60%", "notes": "If 60% completion at 10K, push to 100K" },
+        "viral_threshold": { "rate": "70%", "notes": "70% completion at 100K = viral. Push to 1M+" },
+        "hashtag_strategy": { "count": "3-5", "notes": "Mix of trending + niche + location" },
+        "caption_strategy": { "length": "short", "notes": "Short caption + question = comments" }
+      },
+      "posting_windows": {
+        "tuesday_thursday": { "peak": "07:00-08:00", "secondary": "12:00-13:00", "tertiary": "19:00-21:00" },
+        "weekend": { "peak": "09:00-11:00", "notes": "Weekend mornings high engagement" }
+      },
+      "content_decay": {
+        "first_24h": { "distribution": "100%", "notes": "Make or break window" },
+        "day_2_3": { "distribution": "30%", "notes": "If not viral, decay fast" },
+        "after_week": { "distribution": "5%", "notes": "Dead unless viral" }
+      },
+      "virality_triggers": {
+        "pattern_interrupt": { "multiplier": 3.0, "notes": "Unexpected visual in first 0.5 seconds" },
+        "open_loop": { "multiplier": 2.5, "notes": "Start story, resolve at end = replays" },
+        "trending_sound_first_3s": { "multiplier": 2.0, "notes": "Trending sound in first 3 seconds" },
+        "text_hook": { "multiplier": 1.8, "notes": "\"Stop scrolling\" or \"If you're a X, watch this\"" }
+      },
+      "penalties": {
+        "reposted_from_ig": { "reach_reduction": 0.6, "notes": "Instagram watermark = suppressed" },
+        "low_effort_content": { "reach_reduction": 0.5, "notes": "Blurry, no hook, no value" },
+        "over_60s_poor_retention": { "reach_reduction": 0.4, "notes": "Long video with drop-off = algorithm kills it" }
+      }
+    },
+    "facebook": {
+      "algorithm_name": "Facebook Feed + Reels 2026",
+      "primary_signals": {
+        "meaningful_interaction": { "weight": 0.30, "description": "Comments > reactions. Replies > comments" },
+        "content_type": { "weight": 0.20, "description": "Reels > Photo > Link > Text" },
+        "relationship": { "weight": 0.20, "description": "Friends + family > pages. Personal > brand" },
+        "recency": { "weight": 0.15, "description": "Newer = better. Decay after 6 hours for pages" },
+        "watch_time": { "weight": 0.15, "description": "For video: completion rate matters" }
+      },
+      "optimal_formats": {
+        "reels_30_60s": { "engagement_multiplier": 2.5, "notes": "Reels get priority distribution" },
+        "native_video": { "engagement_multiplier": 1.8, "notes": "Native > YouTube link" },
+        "photo_post": { "engagement_multiplier": 1.2, "notes": "Photos outperform text" },
+        "link_post": { "engagement_multiplier": 0.5, "notes": "Links get suppressed. Use link in comments" },
+        "text_only": { "engagement_multiplier": 0.3, "notes": "Text-only = minimal reach" }
+      },
+      "page_vs_personal": {
+        "personal_profile": { "reach": "100%", "notes": "Personal posts get full distribution" },
+        "page_post": { "reach": "5-10%", "notes": "Pages get 5-10% of followers. Paid boost needed" },
+        "group_post": { "reach": "15-20%", "notes": "Groups get better reach than pages" }
+      },
+      "posting_windows": {
+        "wednesday_friday": { "peak": "09:00-10:00", "secondary": "13:00-14:00" },
+        "weekend": { "peak": "10:00-12:00", "notes": "Weekend mornings good for lifestyle" }
+      },
+      "virality_triggers": {
+        "emotional_story": { "multiplier": 2.5, "notes": "Stories that evoke emotion = shares" },
+        "practical_value": { "multiplier": 1.8, "notes": "Saveable content = algorithm boost" },
+        "conversation_starter": { "multiplier": 1.6, "notes": "Posts that spark debate = comments" }
+      }
+    },
+    "twitter": {
+      "algorithm_name": "X Algorithm 2026",
+      "primary_signals": {
+        "engagement_rate": { "weight": 0.30, "description": "Likes + retweets + replies per impression" },
+        "recency": { "weight": 0.25, "description": "Timeline is real-time. Decay after 1 hour" },
+        "media": { "weight": 0.20, "description": "Video > Image > Text > Link" },
+        "author_credibility": { "weight": 0.15, "description": "Verified + high engagement history = boost" },
+        "topic_relevance": { "weight": 0.10, "description": "Trending topics get distribution" }
+      },
+      "optimal_formats": {
+        "thread_5_10_tweets": { "engagement_multiplier": 3.0, "notes": "Threads get 3x reach. First tweet = hook" },
+        "video_30_60s": { "engagement_multiplier": 2.0, "notes": "Native video gets priority" },
+        "single_insight": { "engagement_multiplier": 1.5, "notes": "One strong take > paragraph" },
+        "poll": { "engagement_multiplier": 1.3, "notes": "Polls get engagement but lower quality" },
+        "link_tweet": { "engagement_multiplier": 0.4, "notes": "Links get suppressed" }
+      },
+      "posting_windows": {
+        "monday_friday": { "peak": "08:00-09:00", "secondary": "12:00-13:00", "tertiary": "17:00-18:00" }
+      },
+      "virality_triggers": {
+        "hot_take": { "multiplier": 2.5, "notes": "Controversial = retweets + quote tweets" },
+        "data_visualization": { "multiplier": 2.0, "notes": "Charts get retweeted" },
+        "thread_with_hook": { "multiplier": 2.2, "notes": "\"I analyzed X hires. Here's what I found:\"" }
+      }
+    }
+  },
+  "cross_platform_strategy": {
+    "content_adaptation": {
+      "same_topic_different_format": "One insight becomes: LinkedIn long-form, IG carousel, TikTok quick tip, X thread, FB link post",
+      "native_first": "Always create native content. Never cross-post identical content",
+      "platform_specific_hooks": "Each platform gets a different hook for the same topic"
+    },
+    "posting_sequence": {
+      "step_1": "Publish on LinkedIn first (highest B2B value)",
+      "step_2": "Adapt to X thread within 2 hours",
+      "step_3": "Create IG carousel within 24 hours",
+      "step_4": "Create TikTok within 48 hours",
+      "step_5": "FB link post within 72 hours"
+    },
+    "engagement_priority": {
+      "linkedin": "Respond to all comments within 1 hour",
+      "instagram": "Respond to comments + engage with followers' content",
+      "tiktok": "Reply to comments with video (algorithm boost)",
+      "twitter": "Quote tweet your own thread with additional insights"
+    }
+  }
+}

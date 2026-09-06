@@ -1,0 +1,62 @@
+[
+  {
+    "id": "tt-1",
+    "name": "Hiring Myth Bust",
+    "template": "Text overlay: \"{{myth}}\"\n\nVisual: Barry (or stock) reacting\n\nCaption: This is wrong. Here's why: {{reality}}. Follow for more hiring truths.\n\n#recruitment #hiring #hr #careeradvice",
+    "best_for": "TikTok awareness, saves"
+  },
+  {
+    "id": "tt-2",
+    "name": "Salary Reveal",
+    "template": "Text overlay: \"{{role}} salary in {{market}} 2026\"\n\nVisual: Animated numbers\n\nCaption: The numbers might surprise you. Full breakdown on our blog. Link in bio.\n\n#salary #career #{{market}} #recruitment",
+    "best_for": "TikTok shares, curiosity"
+  },
+  {
+    "id": "tt-3",
+    "name": "Day in Life",
+    "template": "Text overlay: \"Day in the life of a recruiter\"\n\nVisual: Quick cuts — coffee, calls, whiteboard, team huddle, placement celebration\n\nCaption: This is what embedded recruitment actually looks like. Not an agency. Not a job board.\n\n#recruitmentlife #hiring #career #behindthescenes",
+    "best_for": "TikTok relatability, views"
+  },
+  {
+    "id": "tt-4",
+    "name": "Quick Tip",
+    "template": "Text overlay: \"One hiring tip that saves you thousands\"\n\nVisual: Barry talking (or text animation)\n\nCaption: Try this on your next hire. It works.\n\n#hiringtip #recruitment #careeradvice #hr",
+    "best_for": "TikTok value, saves"
+  },
+  {
+    "id": "tt-5",
+    "name": "Hot Take",
+    "template": "Text overlay: \"Unpopular opinion: {{unpopular_opinion}}\"\n\nVisual: Barry (or stock) with confident expression\n\nCaption: I know this is controversial. But after {{number}} placements, I'm convinced. Agree or disagree?\n\n#recruitment #hiring #career #debate",
+    "best_for": "TikTok viral, comments"
+  },
+  {
+    "id": "tt-6",
+    "name": "Red Flag",
+    "template": "Text overlay: \"Red flag in interviews: {{red_flag}}\"\n\nVisual: Dramatic reaction\n\nCaption: If you see this, run. Follow for more hiring red flags.\n\n#interview #hiring #recruitment #redflag",
+    "best_for": "TikTok saves, shares"
+  },
+  {
+    "id": "tt-7",
+    "name": "Green Flag",
+    "template": "Text overlay: \"Green flag in interviews: {{green_flag}}\"\n\nVisual: Positive reaction\n\nCaption: This tells you everything you need to know. Follow for more.\n\n#interview #hiring #recruitment #greenflag",
+    "best_for": "TikTok saves, shares"
+  },
+  {
+    "id": "tt-8",
+    "name": "Trending Audio",
+    "template": "Text overlay: \"POV: You're a hiring manager in {{market}} in 2026\"\n\nVisual: Trending audio + relevant text\n\nCaption: The hiring landscape has changed. Are you keeping up?\n\n#hiring #recruitment #{{market}} #career",
+    "best_for": "TikTok algorithm, reach"
+  },
+  {
+    "id": "tt-9",
+    "name": "Salary Negotiation",
+    "template": "Text overlay: \"Salary negotiation tip for {{role}}\"\n\nVisual: Barry (or text animation)\n\nCaption: This one tip could save you thousands. Save this for your next negotiation.\n\n#salary #negotiation #careeradvice #{{role}}",
+    "best_for": "TikTok saves, utility"
+  },
+  {
+    "id": "tt-10",
+    "name": "Career Advice",
+    "template": "Text overlay: \"If you're a {{role}}, watch this\"\n\nVisual: Barry (or text animation)\n\nCaption: The advice I wish I knew when I started. Follow for more career insights.\n\n#careeradvice #{{role}} #recruitment #hiring",
+    "best_for": "TikTok follows, authority"
+  }
+]

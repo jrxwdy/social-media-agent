@@ -1,0 +1,62 @@
+[
+  {
+    "id": "ig-1",
+    "name": "Carousel: Hiring Tips",
+    "template": "Slide 1: {{tip_title}}\n\nSlide 2: The problem — {{problem}}\nSlide 3: Why it happens — {{cause}}\nSlide 4: The fix — {{solution}}\nSlide 5: Real example — {{example}}\nSlide 6: CTA — Save this for your next hire\n\nCaption: {{tip_title}}. Most hiring managers get this wrong. Here's what actually works. Save this for later. What's your biggest hiring challenge? 👇\n\n#recruitment #hiring #hr #talentacquisition #employerbranding",
+    "best_for": "IG saves, carousel engagement"
+  },
+  {
+    "id": "ig-2",
+    "name": "Reel: Salary Reveal",
+    "template": "Text overlay: \"What {{role}} earns in {{market}} in 2026\"\n\nVisual: Animated salary breakdown\n\nCaption: The numbers might surprise you. Thinking about hiring for this role? Let's chat. Link in bio.\n\n#salary #hiring #{{market}} #recruitment #careers",
+    "best_for": "IG Reels, shares"
+  },
+  {
+    "id": "ig-3",
+    "name": "Static: Quote Card",
+    "template": "\"{{quote}}\"\n— Barry Prost, Co-Founder, Rent a Recruiter\n\nCaption: This is what {{number}} placements taught us. What's your experience?\n\n#recruitment #hiring #hr #leadership",
+    "best_for": "IG static, saves"
+  },
+  {
+    "id": "ig-4",
+    "name": "Carousel: Myth vs Fact",
+    "template": "Slide 1: Recruitment Myth #{{number}}\nSlide 2: MYTH — {{myth}}\nSlide 3: FACT — {{fact}}\nSlide 4: Why it matters — {{impact}}\nSlide 5: CTA — Share this with a hiring manager\n\nCaption: This myth is costing companies {{consequence}}. Don't fall for it. Share this with someone who needs to see it.\n\n#recruitmentmyth #hiringtips #hr #talent",
+    "best_for": "IG shares, carousels"
+  },
+  {
+    "id": "ig-5",
+    "name": "Reel: Day in Life",
+    "template": "Text overlay: \"Day in the life of an embedded recruiter\"\n\nVisual: Quick cuts of calls, coffee, whiteboard, team huddle\n\nCaption: This is what embedded recruitment actually looks like. Not an agency. Not a job board. A real extension of your team.\n\n#recruitmentlife #hiring #hr #behindthescenes",
+    "best_for": "IG Reels, relatability"
+  },
+  {
+    "id": "ig-6",
+    "name": "Static: Client Win",
+    "template": "Text: \"{{result}} in {{timeframe}}\"\n\nCaption: Client came to us with {{problem}}. Traditional agencies said it was impossible. We did {{approach}}. Result: {{result}} in {{timeframe}}. If you're facing something similar, let's talk.\n\n#clientwin #recruitment #hiring #results",
+    "best_for": "IG static, credibility"
+  },
+  {
+    "id": "ig-7",
+    "name": "Carousel: Market Data",
+    "template": "Slide 1: {{market}} Hiring Report 2026\nSlide 2: Key stat 1 — {{stat_1}}\nSlide 3: Key stat 2 — {{stat_2}}\nSlide 4: Key stat 3 — {{stat_3}}\nSlide 5: What it means — {{implication}}\nSlide 6: CTA — Save this for your strategy\n\nCaption: The data that's shaping hiring in {{market}}. Save this for your next strategy meeting.\n\n#hiringtrends #{{market}} #recruitment #data",
+    "best_for": "IG saves, authority"
+  },
+  {
+    "id": "ig-8",
+    "name": "Reel: Quick Tip",
+    "template": "Text overlay: \"One hiring tip that saves you €{{amount}}\"\n\nVisual: Barry talking (or text animation)\n\nCaption: This one tip has saved our clients thousands. Try it on your next hire.\n\n#hiringtip #recruitment #hr #savings",
+    "best_for": "IG Reels, value"
+  },
+  {
+    "id": "ig-9",
+    "name": "Static: Poll/Question",
+    "template": "Text: \"What's harder right now?\"\n\nOption A: {{option_a}}\nOption B: {{option_b}}\n\nCaption: We're seeing a split across our clients. What's your experience? Vote below.\n\n#poll #hiring #recruitment #hr",
+    "best_for": "IG engagement, comments"
+  },
+  {
+    "id": "ig-10",
+    "name": "Carousel: How To",
+    "template": "Slide 1: How to {{action}} in {{number}} steps\nSlide 2: Step 1 — {{step_1}}\nSlide 3: Step 2 — {{step_2}}\nSlide 4: Step 3 — {{step_3}}\nSlide 5: Step 4 — {{step_4}}\nSlide 6: CTA — Save this checklist\n\nCaption: The step-by-step that actually works. Save this for your next hire.\n\n#howto #hiring #recruitment #checklist",
+    "best_for": "IG saves, utility"
+  }
+]
