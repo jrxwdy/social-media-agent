@@ -2,49 +2,6 @@
   "version": "1.0",
   "updated": "2026-09-05",
   "platforms": {
-    "linkedin": {
-      "algorithm_name": "LinkedIn Feed Ranking 2026",
-      "primary_signals": {
-        "dwell_time": { "weight": 0.25, "description": "Time spent reading. Longer = better. Target: 8+ min for articles, 2+ min for posts" },
-        "comment_quality": { "weight": 0.20, "description": "Comments > likes. Replies to comments count double. Target: 5+ meaningful comments" },
-        "creator_audience_fit": { "weight": 0.15, "description": "Does the viewer follow similar content? Personal > company page" },
-        "recency": { "weight": 0.15, "description": "First 60 minutes critical. Posts decay after 24 hours" },
-        "content_type_boost": { "weight": 0.15, "description": "Document (PDF) > Video > Image > Text > Link" },
-        "profile_completeness": { "weight": 0.10, "description": "Complete profile + active poster gets distribution boost" }
-      },
-      "optimal_formats": {
-        "document_carousel": { "engagement_multiplier": 2.5, "notes": "PDF carousels get 2.5x reach. Native to platform, high dwell time" },
-        "video_under_90s": { "engagement_multiplier": 1.8, "notes": "Short native video. No external links. Subtitles required" },
-        "text_only_personal": { "engagement_multiplier": 1.5, "notes": "Personal stories outperform company updates 3:1" },
-        "poll": { "engagement_multiplier": 1.4, "notes": "Polls get 2x comments but lower quality" },
-        "link_post": { "engagement_multiplier": 0.3, "notes": "External links get suppressed. Put link in comments" }
-      },
-      "posting_windows": {
-        "tuesday_thursday": { "peak": "08:00-09:00", "secondary": "12:00-13:00", "notes": "Highest professional engagement" },
-        "monday": { "peak": "09:00-10:00", "notes": "Planning day, high engagement" },
-        "wednesday": { "peak": "12:00-13:00", "notes": "Mid-week check" },
-        "friday": { "peak": "09:00-10:00", "notes": "Lower competition, decent engagement" },
-        "weekend": { "notes": "Low professional engagement. Avoid unless lifestyle content" }
-      },
-      "content_decay": {
-        "first_hour": { "distribution": "100%", "action": "Push to all followers" },
-        "hour_2_6": { "distribution": "60%", "action": "Test engagement quality" },
-        "hour_6_24": { "distribution": "30%", "action": "Only if high engagement" },
-        "after_24h": { "distribution": "5%", "action": "Dead. Don't boost." }
-      },
-      "virality_triggers": {
-        "contrarian_opinion": { "multiplier": 2.0, "notes": "Unpopular takes get 2x comments" },
-        "personal_story": { "multiplier": 1.8, "notes": "Vulnerability + lesson = saves + shares" },
-        "data_insight": { "multiplier": 1.6, "notes": "Original data gets bookmarked and shared" },
-        "question_hook": { "multiplier": 1.5, "notes": "Posts ending in questions get 50% more comments" }
-      },
-      "penalties": {
-        "external_link_in_post": { "reach_reduction": 0.7, "notes": "LinkedIn suppresses link posts" },
-        "tagging_people": { "reach_reduction": 0.8, "notes": "Tagging without consent = spam signal" },
-        "posting_too_often": { "reach_reduction": 0.5, "notes": "More than 1/day = diminishing returns" },
-        "low_engagement_first_hour": { "reach_reduction": 0.3, "notes": "If no engagement in hour 1, post is dead" }
-      }
-    },
     "instagram": {
       "algorithm_name": "Instagram Feed + Reels Ranking 2026",
       "primary_signals": {
@@ -196,19 +153,17 @@
   },
   "cross_platform_strategy": {
     "content_adaptation": {
-      "same_topic_different_format": "One insight becomes: LinkedIn long-form, IG carousel, TikTok quick tip, X thread, FB link post",
+      "same_topic_different_format": "One insight becomes: IG carousel, TikTok quick tip, X thread, FB link post",
       "native_first": "Always create native content. Never cross-post identical content",
       "platform_specific_hooks": "Each platform gets a different hook for the same topic"
     },
     "posting_sequence": {
-      "step_1": "Publish on LinkedIn first (highest B2B value)",
+      "step_1": "Publish on Instagram first (highest engagement)",
       "step_2": "Adapt to X thread within 2 hours",
-      "step_3": "Create IG carousel within 24 hours",
-      "step_4": "Create TikTok within 48 hours",
-      "step_5": "FB link post within 72 hours"
+      "step_3": "Create TikTok within 48 hours",
+      "step_4": "FB link post within 72 hours"
     },
     "engagement_priority": {
-      "linkedin": "Respond to all comments within 1 hour",
       "instagram": "Respond to comments + engage with followers' content",
       "tiktok": "Reply to comments with video (algorithm boost)",
       "twitter": "Quote tweet your own thread with additional insights"

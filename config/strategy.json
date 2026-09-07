@@ -2,13 +2,6 @@
   "updated_at": "2026-09-05T00:00:00Z",
   "version": "1.0",
   "content_mix": {
-    "linkedin": {
-      "founder_posts": "30%",
-      "data_posts": "20%",
-      "client_wins": "15%",
-      "market_insights": "20%",
-      "hiring_tips": "15%"
-    },
     "instagram": {
       "reels": "35%",
       "carousels": "30%",
@@ -28,11 +21,6 @@
     }
   },
   "posting_times": {
-    "linkedin": {
-      "08:00": "high",
-      "12:00": "high",
-      "17:00": "medium"
-    },
     "instagram": {
       "08:00": "high",
       "12:00": "medium",

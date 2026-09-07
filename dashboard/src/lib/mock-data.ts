@@ -1,5 +1,4 @@
 export type Platform =
-  | "linkedin"
   | "instagram"
   | "facebook"
   | "tiktok"
@@ -56,7 +55,6 @@ export const PLATFORM_META: Record<
   Platform,
   { label: string; color: string; bgColor: string }
 > = {
-  linkedin: { label: "LinkedIn", color: "text-[#0a66c2]", bgColor: "bg-[#0a66c2]/10" },
   instagram: { label: "Instagram", color: "text-[#e1306c]", bgColor: "bg-[#e1306c]/10" },
   facebook: { label: "Facebook", color: "text-[#1877f2]", bgColor: "bg-[#1877f2]/10" },
   tiktok: { label: "TikTok", color: "text-[#111827]", bgColor: "bg-[#111827]/10" },
@@ -84,7 +82,7 @@ export const MOCK_POSTS: Post[] = [
     id: "p1",
     content:
       "Just shipped a new feature that reduces inference latency by 40%. Here's what we learned about batching requests efficiently 🧵",
-    platform: "linkedin",
+    platform: "x",
     format: "thread",
     status: "scheduled",
     scheduledAt: daysFromNow(0, 14, 0),
@@ -120,7 +118,7 @@ export const MOCK_POSTS: Post[] = [
     id: "p4",
     content:
       "How we built a 10x faster pipeline for content generation — a deep dive into our architecture and the trade-offs we made.",
-    platform: "linkedin",
+    platform: "instagram",
     format: "video",
     status: "scheduled",
     scheduledAt: daysFromNow(2, 11, 0),
@@ -168,7 +166,7 @@ export const MOCK_POSTS: Post[] = [
     id: "p8",
     content:
       "The future of content marketing is not more content — it's better content. Quality over quantity, every time.",
-    platform: "linkedin",
+    platform: "instagram",
     format: "text",
     status: "scheduled",
     scheduledAt: daysFromNow(6, 15, 0),
@@ -181,7 +179,7 @@ export const MOCK_POSTS: Post[] = [
     id: "q1",
     content:
       "Excited to announce our partnership with leading AI researchers to bring you smarter content tools. This is just the beginning 🚀",
-    platform: "linkedin",
+    platform: "instagram",
     format: "text",
     status: "queued",
     scheduledAt: daysFromNow(2, 12, 0),
@@ -242,7 +240,6 @@ export const MOCK_METRICS: Metric[] = [
 ];
 
 export const MOCK_PLATFORM_ENGAGEMENT: PlatformEngagement[] = [
-  { platform: "linkedin", engagement: 72, value: "72K" },
   { platform: "instagram", engagement: 85, value: "85K" },
   { platform: "x", engagement: 64, value: "64K" },
   { platform: "tiktok", engagement: 91, value: "91K" },
@@ -278,7 +275,7 @@ export const MOCK_TOP_POSTS: TopPost[] = [
     id: "t4",
     content:
       "Just shipped a new feature that reduces inference latency by 40%. Here's what we learned about batching requests efficiently 🧵",
-    platform: "linkedin",
+    platform: "instagram",
     engagement: 487,
     impressions: 12400,
   },

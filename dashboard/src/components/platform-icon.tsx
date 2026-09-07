@@ -13,12 +13,6 @@ export function PlatformIcon({ platform, className }: PlatformIconProps) {
   const cls = cn("size-4", meta.color, className);
 
   switch (platform) {
-    case "linkedin":
-      return (
-        <svg viewBox="0 0 24 24" fill="currentColor" className={cls} aria-hidden="true">
-          <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3v9zM6.5 8.5a1.5 1.5 0 110-3 1.5 1.5 0 010 3zM19 19h-3v-4.5c0-1.5-.5-2.5-1.75-2.5S12.5 13 12.5 14.5V19h-3v-9h3v1.5c.5-.75 1.5-1.75 3-1.75 2 0 3.5 1.25 3.5 4.25V19z" />
-        </svg>
-      );
     case "instagram":
       return (
         <svg viewBox="0 0 24 24" fill="currentColor" className={cls} aria-hidden="true">

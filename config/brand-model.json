@@ -35,12 +35,6 @@
     "video_style": "Direct-to-camera, confident, well-lit, clean background"
   },
   "content_voice": {
-    "linkedin": {
-      "tone": "Professional but personal. Data-first. Contrarian when warranted.",
-      "format": "Long-form posts, documents, short videos",
-      "cta": "Question to drive comments",
-      "avoid": ["External links in post", "Overly salesy", "Generic advice"]
-    },
     "instagram": {
       "tone": "Visual, punchy, story-driven. Less corporate, more human.",
       "format": "Reels, carousels, stories",

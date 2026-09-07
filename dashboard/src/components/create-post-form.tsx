@@ -24,7 +24,6 @@ import {
 import { generateIdeas } from "@/lib/api";
 
 const ALL_PLATFORMS: Platform[] = [
-  "linkedin",
   "instagram",
   "facebook",
   "tiktok",
@@ -45,7 +44,7 @@ interface CreatePostFormProps {
 export function CreatePostForm({ onCreate, className }: CreatePostFormProps) {
   const [content, setContent] = useState("");
   const [selectedPlatforms, setSelectedPlatforms] = useState<Platform[]>([
-    "linkedin",
+    "instagram",
   ]);
   const [format, setFormat] = useState<PostFormat>("text");
   const [scheduledAt, setScheduledAt] = useState<string>("");

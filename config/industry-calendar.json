@@ -102,31 +102,31 @@
     "pillar_1": {
       "name": "Industry Insight",
       "description": "Data-driven analysis of recruitment trends",
-      "formats": ["LinkedIn long-form", "X thread", "IG carousel", "TikTok quick stat"],
+      "formats": ["X thread", "IG carousel", "TikTok quick stat"],
       "frequency": "3x/week"
     },
     "pillar_2": {
       "name": "Founder Voice",
       "description": "Barry's personal opinions and stories",
-      "formats": ["LinkedIn personal post", "IG Reel", "TikTok talking head"],
+      "formats": ["IG Reel", "TikTok talking head"],
       "frequency": "2x/week"
     },
     "pillar_3": {
       "name": "Practical Value",
       "description": "Actionable hiring tips and frameworks",
-      "formats": ["IG carousel", "LinkedIn document", "TikTok quick tip", "FB link post"],
+      "formats": ["IG carousel", "TikTok quick tip", "FB link post"],
       "frequency": "3x/week"
     },
     "pillar_4": {
       "name": "Social Proof",
       "description": "Client wins, testimonials, case studies",
-      "formats": ["LinkedIn post", "IG static", "FB post"],
+      "formats": ["IG static", "FB post"],
       "frequency": "1x/week"
     },
     "pillar_5": {
       "name": "Market Intelligence",
       "description": "Salary data, hiring trends, market reports",
-      "formats": ["LinkedIn document", "X thread", "IG carousel", "Blog link"],
+      "formats": ["X thread", "IG carousel", "Blog link"],
       "frequency": "1x/week"
     }
   },

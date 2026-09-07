@@ -39,16 +39,6 @@ platforms:
       - "19:00"
     max_posts_per_day: 2
 
-  linkedin:
-    enabled: true
-    features:
-      - posts
-      - articles
-    posting_times:
-      - "08:00"
-      - "12:00"
-    max_posts_per_day: 2
-
   twitter:
     enabled: true
     features:
@@ -62,11 +52,6 @@ platforms:
 
 # Content mix per month (90 posts = Dominator tier)
 content_mix:
-  linkedin:
-    founder_posts: 8
-    data_posts: 4
-    client_wins: 2
-    market_insights: 2
   instagram:
     reels: 8
     carousels: 8
@@ -90,7 +75,6 @@ approval:
   channel: ${SLACK_CHANNEL_ID}
   auto_approve_after_hours: 24
   require_approval_for:
-    - linkedin
     - tiktok
   auto_approve:
     - twitter
