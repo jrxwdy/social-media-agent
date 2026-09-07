@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rent a Recruiter — Social Content Engine</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #fcfbfa;
+  --fg: #18181b;
+  --card: #ffffff;
+  --muted: #71717a;
+  --border: #e4e4e7;
+  --accent: #2563eb;
+  --green: #16a34a;
+  --red: #dc2626;
+  --radius: 12px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Geist', -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+.container { max-width: 720px; margin: 0 auto; padding: 48px 24px; }
+.hero { text-align: center; padding: 40px 0 32px; }
+.hero h1 { font-size: 2.2rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 12px; }
+.hero p { font-size: 1.15rem; color: var(--muted); max-width: 560px; margin: 0 auto; }
+.quote {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  margin: 32px 0;
+  font-style: italic;
+  color: var(--muted);
+}
+.quote strong { color: var(--fg); font-style: normal; }
+h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 40px 0 16px;
+  letter-spacing: -0.01em;
+}
+h3 { font-size: 1.1rem; font-weight: 600; margin: 24px 0 8px; }
+p, li { font-size: 1rem; color: var(--fg); }
+ul { padding-left: 20px; margin: 8px 0; }
+li { margin: 6px 0; }
+.step {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin: 16px 0;
+  padding: 16px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.step-num {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  background: var(--accent);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.step-content h4 { font-weight: 600; margin-bottom: 4px; }
+.step-content p { color: var(--muted); font-size: 0.95rem; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+th, td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.95rem;
+}
+th { background: #f8f9fa; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.03em; color: var(--muted); }
+tr:last-child td { border-bottom: none; }
+tr:hover { background: #fafafa; }
+.check { color: var(--green); font-weight: 600; }
+.cross { color: var(--red); }
+.cta {
+  display: inline-block;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 24px 0;
+  transition: opacity 0.2s;
+}
+.cta:hover { opacity: 0.85; }
+.risk-box {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  margin: 24px 0;
+}
+.risk-box h4 { color: var(--green); margin-bottom: 4px; }
+.risk-box p { color: #166534; font-size: 0.95rem; }
+.need-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin: 12px 0;
+}
+.need-item {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 0.9rem;
+}
+.roi-box {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  margin: 24px 0;
+  text-align: center;
+}
+.roi-box .number { font-size: 2.5rem; font-weight: 700; color: var(--accent); }
+.roi-box .label { color: var(--muted); font-size: 0.9rem; }
+.footer {
+  text-align: center;
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+  .need-list { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 1.6rem; }
+  table { font-size: 0.85rem; }
+  th, td { padding: 10px 12px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="hero">
+  <h1>The other half of the 60 articles</h1>
+  <p>A content engine that turns your existing blog output into a dominant social + AI presence.</p>
+</div>
+
+<div class="quote">
+  <strong>"Anything else we should be doing to drive inbound leads?"</strong><br>
+  — Barry Prost, Aug 14 check-up
+</div>
+
+<p>At the Aug 14 check-up, Barry asked that question. I've been thinking about it ever since. Here's the answer.</p>
+
+<p>You're producing <strong>60 articles a month</strong>. Right now they live on your website and Google. They should also be living on Instagram, TikTok, LinkedIn, Facebook, and inside ChatGPT's answers.</p>
+
+<p>This makes that happen.</p>
+
+<h2>How it works</h2>
+
+<div class="step">
+  <div class="step-num">1</div>
+  <div class="step-content">
+    <h4>Connect (once, 5 minutes)</h4>
+    <p>You connect your accounts once: Instagram, Facebook, TikTok, LinkedIn, X, your website, and calendar. That's it.</p>
+  </div>
+</div>
+
+<div class="step">
+  <div class="step-num">2</div>
+  <div class="step-content">
+    <h4>Agent trains itself (automatic)</h4>
+    <p>It reads your posts, crawls your website, watches your conference talks, and builds a Brand Model — your voice, topics, key messages. You confirm it's right. Takes 2 minutes.</p>
+  </div>
+</div>
+
+<div class="step">
+  <div class="step-num">3</div>
+  <div class="step-content">
+    <h4>Agent creates and schedules</h4>
+    <p>Every week: 15-30 pieces across all platforms, in your voice, scheduled for peak times.</p>
+  </div>
+</div>
+
+<div class="step">
+  <div class="step-num">4</div>
+  <div class="step-content">
+    <h4>You approve (5 minutes a day)</h4>
+    <p>Slack notification each morning. Approve, edit, or reject. Or do a weekly 10-minute review on the dashboard.</p>
+  </div>
+</div>
+
+<div class="step">
+  <div class="step-num">5</div>
+  <div class="step-content">
+    <h4>Agent posts and learns</h4>
+    <p>Posts automatically. Tracks what works. Gets smarter every month.</p>
+  </div>
+</div>
+
+<h2>Three options</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Build It</th>
+      <th>Engine</th>
+      <th>Dominator</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Price</strong></td>
+      <td>$7,500 one-time</td>
+      <td>$2,499/mo</td>
+      <td>$3,000/mo</td>
+    </tr>
+    <tr>
+      <td><strong>Posts/mo</strong></td>
+      <td>Unlimited</td>
+      <td>60</td>
+      <td>90</td>
+    </tr>
+    <tr>
+      <td><strong>Platforms</strong></td>
+      <td>All</td>
+      <td>LI, IG, FB, X</td>
+      <td>All + TikTok</td>
+    </tr>
+    <tr>
+      <td><strong>Blog repurpose</strong></td>
+      <td class="check">✅</td>
+      <td class="check">✅</td>
+      <td class="check">✅</td>
+    </tr>
+    <tr>
+      <td><strong>Trend discovery</strong></td>
+      <td class="check">✅</td>
+      <td class="check">✅</td>
+      <td class="check">✅</td>
+    </tr>
+    <tr>
+      <td><strong>Competitor monitoring</strong></td>
+      <td class="check">✅</td>
+      <td class="check">✅</td>
+      <td class="check">✅</td>
+    </tr>
+    <tr>
+      <td><strong>AI citation tracking</strong></td>
+      <td class="check">✅</td>
+      <td class="cross">❌</td>
+      <td class="check">✅</td>
+    </tr>
+    <tr>
+      <td><strong>Daily show production</strong></td>
+      <td class="cross">❌</td>
+      <td class="cross">❌</td>
+      <td class="check">✅</td>
+    </tr>
+    <tr>
+      <td><strong>Ownership</strong></td>
+      <td>You own it</td>
+      <td>Cancel anytime</td>
+      <td>Cancel anytime</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="risk-box">
+  <h4>Risk reversal</h4>
+  <p>30-day check-in. If we miss engagement targets → we adjust free for 30 days. If we still miss → cancel. No questions asked.</p>
+</div>
+
+<h2>What we need from you</h2>
+
+<div class="need-list">
+  <div class="need-item">📸 Instagram Professional</div>
+  <div class="need-item">📘 Facebook Page</div>
+  <div class="need-item">🎵 TikTok Business</div>
+  <div class="need-item">💼 LinkedIn</div>
+  <div class="need-item">📅 Google/Outlook Calendar</div>
+  <div class="need-item">💬 Slack workspace</div>
+</div>
+
+<h2>The ROI</h2>
+
+<div class="roi-box">
+  <div class="number">€60,000/mo</div>
+  <div class="label">Conservative pipeline value: 12 extra referrals × €5,000 avg fee</div>
+</div>
+
+<p>You're already getting 3 referrals in 7 months <strong>without</strong> a content engine. Imagine what happens with one.</p>
+
+<h2>Next step</h2>
+
+<p>Worth a 15-minute call this week? I'll show you the system running for another client and walk through what it looks like for RAR.</p>
+
+<a href="mailto:james@twintone.ai?subject=Re:%20the%20other%20half%20of%20the%2060%20articles" class="cta">Book a 15-min call →</a>
+
+<div class="footer">
+  <p>James Rowdy · Founder, TwinTone<br>
+  james@twintone.ai · +1 563 893 8200</p>
+  <p style="margin-top:8px; font-size:0.85rem;">P.S. Infrastructure cost is just your existing server. No monthly SaaS fees on top.</p>
+</div>
+
+</div>
+</body>
+</html>
